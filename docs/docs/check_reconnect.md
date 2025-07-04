@@ -1,4 +1,3 @@
-# `check_reconnect`
 
 ::: bipackage.check_reconnect
     options:

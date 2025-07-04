@@ -1,4 +1,3 @@
-# `is_mounted`
 
 ::: bipackage.is_mounted
     options:

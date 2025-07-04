@@ -1,4 +1,3 @@
-# `check_gzip_validity`
 
 ::: bipackage.check_gzip_validity
     options:

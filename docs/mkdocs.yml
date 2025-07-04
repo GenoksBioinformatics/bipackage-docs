@@ -1,4 +1,4 @@
-site_name: bipackage Docs
+site_name: BIPACKAGE
 theme:
   name: material
   font:
@@ -14,7 +14,7 @@ theme:
     # Palette toggle for light mode
     
     - scheme: default
-      primary: red
+      primary: green
       accent: teal
       toggle:
         icon: material/brightness-7 
@@ -23,7 +23,7 @@ theme:
     # Palette toggle for dark mode
     - scheme: slate
       primary: red
-      accent: teal
+      accent: purple
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -32,7 +32,7 @@ theme:
   extensions:
     - toc:
         permalink: true
-        toc_depth: 2
+        toc_depth: 0
 
 plugins:
   - search
@@ -47,6 +47,7 @@ plugins:
             show_submodules: false
             separate_signature: true
             show_root_toc_entry: false
+            heading_level: 1
             
 
 markdown_extensions:
@@ -60,7 +61,7 @@ markdown_extensions:
   - pymdownx.snippets
 
 nav:
-  - Documentation:
+  - BIP API:
     - Installation: index.md
     - Bamtools:
       - bam_counts: bam_counts.md
@@ -81,3 +82,4 @@ nav:
       - mount_server: mount_server.md
     - NiptTools:
       - nipt_bcl2fastq: nipt_bcl2fastq.md
+  

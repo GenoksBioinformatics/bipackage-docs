@@ -85,6 +85,27 @@ nav:
       - nipt_bcl2fastq: bip/nipt_bcl2fastq.md
   - BIP CLI:
     - Home: bip-CLI/index.md
+    - Bamtools:
+      - bam_counts: bip-CLI/bam_counts.md
+      - compile_bam_stats: bip-CLI/compile_bam_stats.md
+    - Bedtools:
+      - bedfilegenerator: bip-CLI/bedfilegenerator.md
+    - Fastqtools:
+      - downsample: bip-CLI/downsample.md
+      - fastq_read_counter: bip-CLI/fastq_read_counter.md
+      - fastqvalidate: bip-CLI/fastqvalidate.md
+      - merge_it: bip-CLI/merge_it.md
+      - undetermined_demultiplexer: bip-CLI/undetermined_demultiplexer.md
+    - ittools:
+      - check_gzip_validity: bip-CLI/check_gzip_validity.md
+      - check_reconnect: bip-CLI/check_reconnect.md
+      - is_mounted: bip-CLI/is_mounted.md
+      - md5sumchecker: bip-CLI/md5sumchecker.md
+      - mount_server: bip-CLI/mount_server.md
+    - NiptTools:
+      - nipt_bcl2fastq: bip-CLI/nipt_bcl2fastq.md
+
+
   - BIPIPE CLI:
     - bwa_dedup: bipipe-CLI/bwa_dedup.md
     - gatk_gcnv: bipipe-CLI/gatk_gcnv.md

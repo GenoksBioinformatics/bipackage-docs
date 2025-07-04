@@ -40,7 +40,7 @@ plugins:
       handlers:
         python:
           options:
-            docstring_style: numpy
+            #docstring_style: numpy
             show_signature: true
             show_signature_annotations: true
             show_source: false
@@ -61,25 +61,32 @@ markdown_extensions:
   - pymdownx.snippets
 
 nav:
-  - BIP API:
-    - Installation: index.md
+  - Installation: index.md
+  - BIP:
     - Bamtools:
-      - bam_counts: bam_counts.md
-      - compile_bam_stats: compile_bam_stats.md
+      - bam_counts: bip/bam_counts.md
+      - compile_bam_stats: bip/compile_bam_stats.md
     - Bedtools:
-      - bedfilegenerator: bedfilegenerator.md
+      - bedfilegenerator: bip/bedfilegenerator.md
     - Fastqtools:
-      - downsample: downsample.md
-      - fastq_read_counter: fastq_read_counter.md
-      - fastqvalidate: fastqvalidate.md
-      - merge_it: merge_it.md
-      - undetermined_demultiplexer: undetermined_demultiplexer.md
+      - downsample: bip/downsample.md
+      - fastq_read_counter: bip/fastq_read_counter.md
+      - fastqvalidate: bip/fastqvalidate.md
+      - merge_it: bip/merge_it.md
+      - undetermined_demultiplexer: bip/undetermined_demultiplexer.md
     - ittools:
-      - check_gzip_validity: check_gzip_validity.md
-      - check_reconnect: check_reconnect.md
-      - is_mounted: is_mounted.md
-      - md5sumchecker: md5sumchecker.md
-      - mount_server: mount_server.md
+      - check_gzip_validity: bip/check_gzip_validity.md
+      - check_reconnect: bip/check_reconnect.md
+      - is_mounted: bip/is_mounted.md
+      - md5sumchecker: bip/md5sumchecker.md
+      - mount_server: bip/mount_server.md
     - NiptTools:
-      - nipt_bcl2fastq: nipt_bcl2fastq.md
-  
+      - nipt_bcl2fastq: bip/nipt_bcl2fastq.md
+  - BIPIPE:
+    - bwa_dedup: bipipe-CLI/bwa_dedup.md
+    - gatk_gcnv: bipipe-CLI/gatk_gcnv.md
+    - cnv_pon: bipipe-CLI/cnv_pon.md
+    - snv_indel: bipipe-CLI/snv_indel.md
+    - cnv: bipipe-CLI/cnv.md
+
+    

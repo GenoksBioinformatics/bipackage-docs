@@ -1,0 +1,93 @@
+## USAGE
+
+```bash
+Usage: bipipe cnv_pon [-h] [--config CONFIG] [--output_folder OUTPUT_FOLDER]
+                      [--ref_fasta REF_FASTA] [--ref_dict REF_DICT]
+                      [--interval_list INTERVAL_LIST] [--pon_id PON_ID]
+                      [--normal_bams NORMAL_BAMS [NORMAL_BAMS ...]]
+                      [--gc_correction] [--bin_length BIN_LENGTH]
+                      [--blacklist_intervals BLACKLIST_INTERVALS]
+                      [--padding PADDING] [--do_impute_zeros]
+                      [--number_of_eigensamples NUMBER_OF_EIGENSAMPLES]
+                      [--feature_query_lookahead FEATURE_QUERY_LOOKAHEAD]
+                      [--minimum_interval_median_percentile MINIMUM_INTERVAL_MEDIAN_PERCENTILE]
+                      [--maximum_zeros_in_sample_percentage MAXIMUM_ZEROS_IN_SAMPLE_PERCENTAGE]
+                      [--maximum_zeros_in_interval_percentage MAXIMUM_ZEROS_IN_INTERVAL_PERCENTAGE]
+                      [--extreme_sample_median_percentile EXTREME_SAMPLE_MEDIAN_PERCENTILE]
+                      [--extreme_outlier_truncation_percentile EXTREME_OUTLIER_TRUNCATION_PERCENTILE]
+                      [--maximum_chunk_size MAXIMUM_CHUNK_SIZE]
+```
+
+
+## Example Config
+
+```json
+{
+  "output_folder": "/PATH/TO/OUTPUT/FOLDER",
+  "ref_fasta": "/PATH/TO/REFERENCE/genome.fa",
+  "ref_dict": "/PATH/TO/REFERENCE/genome.dict",
+  "interval_list": "/PATH/TO/INTERVAL_LIST.interval_list",
+  "pon_id": "PON_ID",
+  "normal_bams": [
+    "/PATH/TO/NORMAL1.bam",
+    "/PATH/TO/NORMAL2.bam",
+    "/PATH/TO/NORMAL3.bam"
+  ],
+  "gc_correction": true,
+  "bin_length": 10000,
+  "blacklist_intervals": "/PATH/TO/BLACKLIST.interval_list",
+  "padding": 250,
+  "do_impute_zeros": true,
+  "number_of_eigensamples": 20,
+  "feature_query_lookahead": 1000000,
+  "minimum_interval_median_percentile": 10.0,
+  "maximum_zeros_in_sample_percentage": 5.0,
+  "maximum_zeros_in_interval_percentage": 5.0,
+  "extreme_sample_median_percentile": 2.5,
+  "extreme_outlier_truncation_percentile": 0.1,
+  "maximum_chunk_size": 16777216
+
+}
+```
+
+
+## CLI
+
+```bash
+Options:
+  -h, --help            "show this help message and exit"
+  --config CONFIG       "Path to the configuration file for the PON pipeline."
+  --output_folder OUTPUT_FOLDER
+                        "Output folder for results."
+  --ref_fasta REF_FASTA
+                        "Path to the reference FASTA file."
+  --ref_dict REF_DICT   "Path to the reference dictionary file."
+  --interval_list INTERVAL_LIST
+                        "Path to the interval list file."
+  --pon_id PON_ID       "Panel of Normals ID."
+  --normal_bams NORMAL_BAMS [NORMAL_BAMS ...]
+                        "List of normal BAM files."
+  --gc_correction       "Enable GC correction."
+  --bin_length BIN_LENGTH
+                        "Bin length."
+  --blacklist_intervals BLACKLIST_INTERVALS
+                        "Path to blacklist intervals file."
+  --padding PADDING     "Padding value."
+  --do_impute_zeros     "Impute zeros."
+  --number_of_eigensamples NUMBER_OF_EIGENSAMPLES
+                        "Number of eigensamples."
+  --feature_query_lookahead FEATURE_QUERY_LOOKAHEAD
+                        "Feature query lookahead."
+  --minimum_interval_median_percentile MINIMUM_INTERVAL_MEDIAN_PERCENTILE
+                        "Minimum interval median percentile."
+  --maximum_zeros_in_sample_percentage MAXIMUM_ZEROS_IN_SAMPLE_PERCENTAGE
+                        "Maximum zeros in sample percentage."
+  --maximum_zeros_in_interval_percentage MAXIMUM_ZEROS_IN_INTERVAL_PERCENTAGE
+                        "Maximum zeros in interval percentage."
+  --extreme_sample_median_percentile EXTREME_SAMPLE_MEDIAN_PERCENTILE
+                        "Extreme sample median percentile."
+  --extreme_outlier_truncation_percentile EXTREME_OUTLIER_TRUNCATION_PERCENTILE
+                        "Extreme outlier truncation percentile."
+  --maximum_chunk_size MAXIMUM_CHUNK_SIZE
+                        "Maximum chunk size."
+```

@@ -64,6 +64,8 @@ markdown_extensions:
 
 nav:
   - Installation: index.md
+
+
   - BIP API:
     - Home: bip/index.md
     - Bamtools:
@@ -85,6 +87,8 @@ nav:
       - mount_server: bip/mount_server.md
     - NiptTools:
       - nipt_bcl2fastq: bip/nipt_bcl2fastq.md
+    
+    
   - BIP CLI:
     - Home: bip-CLI/index.md
     - Bamtools:
@@ -109,6 +113,7 @@ nav:
 
 
   - BIPIPE CLI:
+    - Home: bipipe-CLI/index.md
     - bwa_dedup: bipipe-CLI/bwa_dedup.md
     - gatk_gcnv: bipipe-CLI/gatk_gcnv.md
     - cnv_pon: bipipe-CLI/cnv_pon.md

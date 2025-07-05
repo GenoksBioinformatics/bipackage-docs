@@ -36,31 +36,20 @@ Usage: bipipe gatk_gcnv [-h] [--config CONFIG] [--input_json INPUT_JSON]
 
 ## CLI
 
-```bash
-Options:
-  -h, --help            "show this help message and exit"
-  --config CONFIG       "Path to the configuration file for the GATK GCNV pipeline."
-  --input_json INPUT_JSON
-                        "Paths to input bams (JSON file)"
-  --output_dir OUTPUT_DIR
-                        "Path to output directory"
-  --exome_loc EXOME_LOC
-                        "Path to exome BED file"
-  --genome_fasta GENOME_FASTA
-                        "Path to genome FASTA file"
-  --ref_dict REF_DICT   "Path to reference dictionary file"
-  --contig_pp CONTIG_PP
-                        "Path to contig ploidy prior file"
-  --class_coherence_length CLASS_COHERENCE_LENGTH
-                        "Class coherence length"
-  --cnv_coherence_length CNV_COHERENCE_LENGTH
-                        "CNV coherence length"
-  --min_contig_length MIN_CONTIG_LENGTH
-                        "Minimum contig length"
-  --p_active P_ACTIVE   "Prior probability of treating an interval as CNV-active"
-  --p_alt P_ALT         "Total prior probability of alternative copy-number states"
-  --interval_psi_scale INTERVAL_PSI_SCALE
-                        "Typical scale of interval-specific unexplained variance"
-  --sample_psi_scale SAMPLE_PSI_SCALE
-                        "Typical scale of sample-specific correction to the unexplained variance"
-```
+| Option                                    | Required | Description                                                           |
+|-------------------------------------------|----------|-----------------------------------------------------------------------|
+| `-h, --help`                              | No       | Show this help message and exit                                      |
+| `--config CONFIG`                         | No       | Path to the configuration file for the GATK GCNV pipeline.           |
+| `--input_json INPUT_JSON`                 | No       | Paths to input bams (JSON file)                                      |
+| `--output_dir OUTPUT_DIR`                 | No       | Path to output directory                                              |
+| `--exome_loc EXOME_LOC`                   | No       | Path to exome BED file                                                |
+| `--genome_fasta GENOME_FASTA`             | No       | Path to genome FASTA file                                             |
+| `--ref_dict REF_DICT`                     | No       | Path to reference dictionary file                                     |
+| `--contig_pp CONTIG_PP`                   | No       | Path to contig ploidy prior file                                      |
+| `--class_coherence_length CLASS_COHERENCE_LENGTH` | No | Class coherence length                                           |
+| `--cnv_coherence_length CNV_COHERENCE_LENGTH` | No | CNV coherence length                                                 |
+| `--min_contig_length MIN_CONTIG_LENGTH`   | No       | Minimum contig length                                                 |
+| `--p_active P_ACTIVE`                     | No       | Prior probability of treating an interval as CNV-active              |
+| `--p_alt P_ALT`                           | No       | Total prior probability of alternative copy-number states            |
+| `--interval_psi_scale INTERVAL_PSI_SCALE` | No       | Typical scale of interval-specific unexplained variance              |
+| `--sample_psi_scale SAMPLE_PSI_SCALE`     | No       | Typical scale of sample-specific correction to the unexplained variance

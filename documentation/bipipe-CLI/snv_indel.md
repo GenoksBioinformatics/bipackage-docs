@@ -91,53 +91,32 @@ Usage: bipipe snv_indel [-h] [--config CONFIG] [--algotype ALGOTYPE]
 
 ## CLI
 
-```bash
-Options:
-  -h, --help            "show this help message and exit"
-  --config CONFIG       "Path to the configuration file for the SNV/Indel pipeline."
-  --algotype ALGOTYPE   "Algorithm type for BWA indexing."
-  --index_fasta         "Whether to index the FASTA file."
-  --aligner_threads ALIGNER_THREADS
-                        "Number of threads for the aligner."
-  --remove_all_duplicates
-                        "Remove all duplicates."
-  --remove_sequencing_duplicates
-                        "Remove sequencing duplicates."
-  --use_gatk_mark_duplicates
-                        "Use GATK MarkDuplicates."
-  --use_dragen          "Use DRAGEN."
-  --output_folder OUTPUT_FOLDER
-                        "Output folder for results."
-  --run_name RUN_NAME   "Run name."
-  --ref_fasta REF_FASTA
-                        "Path to the reference FASTA file."
-  --ref_dict REF_DICT   "Path to the reference dictionary file."
-  --interval_list INTERVAL_LIST
-                        "Path to the interval list file."
-  --scatter_count SCATTER_COUNT
-                        "Scatter count."
-  --germline_resource GERMLINE_RESOURCE
-                        "Path to the germline resource VCF."
-  --index_image INDEX_IMAGE
-                        "Path to the index image."
-  --downsampling_stride DOWNSAMPLING_STRIDE
-                        "Downsampling stride."
-  --panel_of_normals PANEL_OF_NORMALS
-                        "Panel of normals file."
-  --variants_for_contamination VARIANTS_FOR_CONTAMINATION
-                        "Variants for contamination file."
-  --max_reads_per_alignment_start MAX_READS_PER_ALIGNMENT_START
-                        "Max reads per alignment start."
-  --max_suspicious_reads_per_alignment_start MAX_SUSPICIOUS_READS_PER_ALIGNMENT_START
-                        "Max suspicious reads per alignment start."
-  --max_population_af MAX_POPULATION_AF
-                        "Max population allele frequency."
-  --lrom                "Enable LROM."
-  --interval_padding INTERVAL_PADDING
-                        "Interval padding."
-  --tumor_samples TUMOR_SAMPLES
-                        "JSON string or path to tumor samples list."
-  --normal_samples NORMAL_SAMPLES
-                        "JSON string or path to normal samples list."
-
-```
+| Option                                           | Required | Description                                      |
+|--------------------------------------------------|----------|--------------------------------------------------|
+| `-h, --help`                                     | No       | Show this help message and exit                 |
+| `--config CONFIG`                                | No       | Path to the configuration file for the SNV/Indel pipeline. |
+| `--algotype ALGOTYPE`                            | No       | Algorithm type for BWA indexing.                |
+| `--index_fasta`                                  | No       | Whether to index the FASTA file.                |
+| `--aligner_threads ALIGNER_THREADS`              | No       | Number of threads for the aligner.              |
+| `--remove_all_duplicates`                        | No       | Remove all duplicates.                           |
+| `--remove_sequencing_duplicates`                 | No       | Remove sequencing duplicates.                    |
+| `--use_gatk_mark_duplicates`                     | No       | Use GATK MarkDuplicates.                         |
+| `--use_dragen`                                   | No       | Use DRAGEN.                                      |
+| `--output_folder OUTPUT_FOLDER`                  | No       | Output folder for results.                       |
+| `--run_name RUN_NAME`                            | No       | Run name.                                        |
+| `--ref_fasta REF_FASTA`                          | No       | Path to the reference FASTA file.               |
+| `--ref_dict REF_DICT`                            | No       | Path to the reference dictionary file.          |
+| `--interval_list INTERVAL_LIST`                  | No       | Path to the interval list file.                 |
+| `--scatter_count SCATTER_COUNT`                  | No       | Scatter count.                                   |
+| `--germline_resource GERMLINE_RESOURCE`          | No       | Path to the germline resource VCF.              |
+| `--index_image INDEX_IMAGE`                      | No       | Path to the index image.                         |
+| `--downsampling_stride DOWNSAMPLING_STRIDE`      | No       | Downsampling stride.                             |
+| `--panel_of_normals PANEL_OF_NORMALS`            | No       | Panel of normals file.                           |
+| `--variants_for_contamination VARIANTS_FOR_CONTAMINATION` | No | Variants for contamination file.           |
+| `--max_reads_per_alignment_start MAX_READS_PER_ALIGNMENT_START` | No | Max reads per alignment start.       |
+| `--max_suspicious_reads_per_alignment_start MAX_SUSPICIOUS_READS_PER_ALIGNMENT_START` | No | Max suspicious reads per alignment start. |
+| `--max_population_af MAX_POPULATION_AF`          | No       | Max population allele frequency.                 |
+| `--lrom`                                         | No       | Enable LROM.                                     |
+| `--interval_padding INTERVAL_PADDING`            | No       | Interval padding.                                |
+| `--tumor_samples TUMOR_SAMPLES`                  | No       | JSON string or path to tumor samples list.      |
+| `--normal_samples NORMAL_SAMPLES`                | No       | JSON string or path to normal samples list.     |

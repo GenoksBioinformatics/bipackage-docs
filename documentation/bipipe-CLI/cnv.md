@@ -114,97 +114,44 @@ Usage: bipipe cnv [-h] [--config CONFIG] [--algotype ALGOTYPE] [--index_fasta]
 
 ## CLI
 
-```bash
-Options:
-  -h, --help            "show this help message and exit"
-  --config CONFIG       "Path to the configuration file for the CNV pipeline."
-  --algotype ALGOTYPE   "Algorithm type for BWA indexing."
-  --index_fasta         "Whether to index the FASTA file."
-  --aligner_threads ALIGNER_THREADS
-                        "Number of threads for the aligner."
-  --remove_all_duplicates
-                        "Remove all duplicates."
-  --remove_sequencing_duplicates
-                        "Remove sequencing duplicates."
-  --use_gatk_mark_duplicates
-                        "Use GATK MarkDuplicates."
-  --use_dragen          "Use DRAGEN."
-  --output_folder OUTPUT_FOLDER
-                        "Output folder for results."
-  --run_name RUN_NAME   "Run name."
-  --ref_fasta REF_FASTA
-                        "Path to the reference FASTA file."
-  --ref_dict REF_DICT   "Path to the reference dictionary file."
-  --interval_list INTERVAL_LIST
-                        "Path to the interval list file."
-  --common_sites COMMON_SITES
-                        "Path to the common sites interval list."
-  --pon PON             "Panel of normals HDF5 file."
-  --blacklist_intervals BLACKLIST_INTERVALS
-                        "Path to blacklist intervals file."
-  --minimum_base_quality MINIMUM_BASE_QUALITY
-                        "Minimum base quality."
-  --number_of_eigensamples NUMBER_OF_EIGENSAMPLES
-                        "Number of eigensamples."
-  --minimum_total_allele_count_case MINIMUM_TOTAL_ALLELE_COUNT_CASE
-                        "Minimum total allele count (case)."
-  --minimum_total_allele_count_normal MINIMUM_TOTAL_ALLELE_COUNT_NORMAL
-                       " Minimum total allele count (normal)."
-  --genotyping_homozygous_log_ratio_threshold GENOTYPING_HOMOZYGOUS_LOG_RATIO_THRESHOLD
-                        "Genotyping homozygous log ratio threshold."
-  --genotyping_base_error_rate GENOTYPING_BASE_ERROR_RATE
-                        "Genotyping base error rate."
-  --maximum_number_of_segments_per_chromosome MAXIMUM_NUMBER_OF_SEGMENTS_PER_CHROMOSOME
-                        "Max segments per chromosome."
-  --kernel_variance_copy_ratio KERNEL_VARIANCE_COPY_RATIO
-                        "Kernel variance copy ratio."
-  --kernel_variance_allele_fraction KERNEL_VARIANCE_ALLELE_FRACTION
-                        "Kernel variance allele fraction."
-  --kernel_scaling_allele_fraction KERNEL_SCALING_ALLELE_FRACTION
-                        "Kernel scaling allele fraction."
-  --kernel_approximation_dimension KERNEL_APPROXIMATION_DIMENSION
-                        "Kernel approximation dimension."
-  --window_size WINDOW_SIZE [WINDOW_SIZE ...]
-                       " Window sizes."
-  --number_of_changepoints_penalty_factor NUMBER_OF_CHANGEPOINTS_PENALTY_FACTOR
-                        "Changepoints penalty factor."
-  --minor_allele_fraction_prior_alpha MINOR_ALLELE_FRACTION_PRIOR_ALPHA
-                        "Minor allele fraction prior alpha."
-  --number_of_samples_copy_ratio NUMBER_OF_SAMPLES_COPY_RATIO
-                        "Number of samples (copy ratio)."
-  --number_of_burn_in_samples_copy_ratio NUMBER_OF_BURN_IN_SAMPLES_COPY_RATIO
-                       " Burn-in samples (copy ratio)."
-  --number_of_samples_allele_fraction NUMBER_OF_SAMPLES_ALLELE_FRACTION
-                        "Number of samples (allele fraction)."
-  --number_of_burn_in_samples_allele_fraction NUMBER_OF_BURN_IN_SAMPLES_ALLELE_FRACTION
-                        "Burn-in samples (allele fraction)."
-  --smoothing_credible_interval_threshold_copy_ratio SMOOTHING_CREDIBLE_INTERVAL_THRESHOLD_COPY_RATIO
-                        "Smoothing credible interval threshold (copy ratio)."
-  --smoothing_credible_interval_threshold_allele_fraction SMOOTHING_CREDIBLE_INTERVAL_THRESHOLD_ALLELE_FRACTION
-                        "Smoothing credible interval threshold (allele fraction)."
-  --maximum_number_of_smoothing_iterations MAXIMUM_NUMBER_OF_SMOOTHING_ITERATIONS
-                        "Max smoothing iterations."
-  --number_of_smoothing_iterations_per_fit NUMBER_OF_SMOOTHING_ITERATIONS_PER_FIT
-                        "Smoothing iterations per fit."
-  --neutral_segment_copy_ratio_lower_bound NEUTRAL_SEGMENT_COPY_RATIO_LOWER_BOUND
-                        "Neutral segment copy ratio lower bound."
-  --neutral_segment_copy_ratio_upper_bound NEUTRAL_SEGMENT_COPY_RATIO_UPPER_BOUND
-                        "Neutral segment copy ratio upper bound."
-  --outlier_neutral_segment_copy_ratio_z_score_threshold OUTLIER_NEUTRAL_SEGMENT_COPY_RATIO_Z_SCORE_THRESHOLD
-                        "Outlier neutral segment copy ratio z-score threshold."
-  --calling_copy_ratio_z_score_threshold CALLING_COPY_RATIO_Z_SCORE_THRESHOLD
-                        "Calling copy ratio z-score threshold."
-  --minimum_contig_length MINIMUM_CONTIG_LENGTH
-                        "Minimum contig length."
-  --maximum_copy_ratio MAXIMUM_COPY_RATIO
-                        "Maximum copy ratio."
-  --point_size_copy_ratio POINT_SIZE_COPY_RATIO
-                        "Point size (copy ratio)."
-  --point_size_allele_fraction POINT_SIZE_ALLELE_FRACTION
-                        "Point size (allele fraction)."
-  --tumor_samples TUMOR_SAMPLES
-                        "JSON string of tumor samples list."
-  --normal_samples NORMAL_SAMPLES
-                        "JSON string of normal samples list."
-
-```
+| Option                                           | Required | Description                                      |
+|--------------------------------------------------|----------|--------------------------------------------------|
+| `-h, --help`                                     | No       | Show this help message and exit                 |
+| `--config CONFIG`                                | No       | Path to the configuration file for the CNV pipeline. |
+| `--algotype ALGOTYPE`                            | No       | Algorithm type for BWA indexing.                |
+| `--index_fasta`                                  | No       | Whether to index the FASTA file.                |
+| `--aligner_threads ALIGNER_THREADS`              | No       | Number of threads for the aligner.              |
+| `--remove_all_duplicates`                        | No       | Remove all duplicates.                           |
+| `--remove_sequencing_duplicates`                 | No       | Remove sequencing duplicates.                    |
+| `--use_gatk_mark_duplicates`                     | No       | Use GATK MarkDuplicates.                         |
+| `--use_dragen`                                   | No       | Use DRAGEN.                                      |
+| `--output_folder OUTPUT_FOLDER`                  | No       | Output folder for results.                       |
+| `--run_name RUN_NAME`                            | No       | Run name.                                        |
+| `--ref_fasta REF_FASTA`                          | No       | Path to the reference FASTA file.               |
+| `--ref_dict REF_DICT`                            | No       | Path to the reference dictionary file.          |
+| `--interval_list INTERVAL_LIST`                  | No       | Path to the interval list file.                 |
+| `--common_sites COMMON_SITES`                    | No       | Path to the common sites interval list.         |
+| `--pon PON`                                      | No       | Panel of normals HDF5 file.                     |
+| `--blacklist_intervals BLACKLIST_INTERVALS`      | No       | Path to blacklist intervals file.               |
+| `--minimum_base_quality MINIMUM_BASE_QUALITY`    | No       | Minimum base quality.                            |
+| `--number_of_eigensamples NUMBER_OF_EIGENSAMPLES` | No     | Number of eigensamples.                          |
+| `--minimum_total_allele_count_case MINIMUM_TOTAL_ALLELE_COUNT_CASE` | No | Minimum total allele count (case). |
+| `--minimum_total_allele_count_normal MINIMUM_TOTAL_ALLELE_COUNT_NORMAL` | No | Minimum total allele count (normal). |
+| `--genotyping_homozygous_log_ratio_threshold GENOTYPING_HOMOZYGOUS_LOG_RATIO_THRESHOLD` | No | Genotyping homozygous log ratio threshold. |
+| `--genotyping_base_error_rate GENOTYPING_BASE_ERROR_RATE` | No | Genotyping base error rate. |
+| `--maximum_number_of_segments_per_chromosome MAXIMUM_NUMBER_OF_SEGMENTS_PER_CHROMOSOME` | No | Max segments per chromosome. |
+| `--kernel_variance_copy_ratio KERNEL_VARIANCE_COPY_RATIO` | No | Kernel variance copy ratio. |
+| `--kernel_variance_allele_fraction KERNEL_VARIANCE_ALLELE_FRACTION` | No | Kernel variance allele fraction. |
+| `--kernel_scaling_allele_fraction KERNEL_SCALING_ALLELE_FRACTION` | No | Kernel scaling allele fraction. |
+| `--kernel_approximation_dimension KERNEL_APPROXIMATION_DIMENSION` | No | Kernel approximation dimension. |
+| `--window_size WINDOW_SIZE [WINDOW_SIZE ...]`    | No       | Window sizes.                                    |
+| `--number_of_changepoints_penalty_factor NUMBER_OF_CHANGEPOINTS_PENALTY_FACTOR` | No | Changepoints penalty factor. |
+| `--minor_allele_fraction_prior_alpha MINOR_ALLELE_FRACTION_PRIOR_ALPHA` | No | Minor allele fraction prior alpha. |
+| `--number_of_samples_copy_ratio NUMBER_OF_SAMPLES_COPY_RATIO` | No | Number of samples (copy ratio). |
+| `--number_of_burn_in_samples_copy_ratio NUMBER_OF_BURN_IN_SAMPLES_COPY_RATIO` | No | Burn-in samples (copy ratio). |
+| `--number_of_samples_allele_fraction NUMBER_OF_SAMPLES_ALLELE_FRACTION` | No | Number of samples (allele fraction). |
+| `--number_of_burn_in_samples_allele_fraction NUMBER_OF_BURN_IN_SAMPLES_ALLELE_FRACTION` | No | Burn-in samples (allele fraction). |
+| `--smoothing_credible_interval_threshold_copy_ratio SMOOTHING_CREDIBLE_INTERVAL_THRESHOLD_COPY_RATIO` | No | Smoothing credible interval threshold (copy ratio). |
+| `--smoothing_credible_interval_threshold_allele_fraction SMOOTHING_CREDIBLE_INTERVAL_THRESHOLD_ALLELE_FRACTION` | No | Smoothing credible interval threshold (allele fraction). |
+| `--maximum_number_of_smoothing_iterations MAXIMUM_NUMBER_OF_SMOOTHING_ITERATIONS` | No | Max smoothing iterations. |
+| `--number_of_smoothing_iterations_per_fit NUMBER_OF_SMOOTHING_ITERATIONS_PER_FIT` | No | Smoothing iterations

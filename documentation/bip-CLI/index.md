@@ -1,5 +1,5 @@
 
-## Usage
+__Usage__
 ```bash
 bip [command] **params
 ```
@@ -23,8 +23,9 @@ bip [command] **params
 | `check_gzip_validity`        | `cgv`   | Check a compressed file validity. |
 | `nipt_bcl2fastq`             | `nb2f`  | Run bcl2fastq conversion for multiple BCL folders. |
 
-## Options
+__Options__
+
 | Option           | Description                       |
 |------------------|-----------------------------------|
 | `-h, --help`     | Show this help message and exit   |
-| `--version, -v`  | Show
+| `--version, -v`  | Show version                      |

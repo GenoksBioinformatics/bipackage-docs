@@ -7,11 +7,13 @@ theme:
     code: JetBrains Mono
     size: 2
   features:
-    - toc.integrate
+    #- toc.integrate
     - navigation.top
     - content.code.copy
     - navigation.sections
     - navigation.tabs
+    - navigation.indexes
+    - toc.follow
   palette:
     # Palette toggle for light mode
     
@@ -34,7 +36,7 @@ theme:
   extensions:
     - toc:
         permalink: true
-        toc_depth: 0
+        toc_depth: 3
 
 plugins:
   - search
@@ -114,10 +116,14 @@ nav:
 
   - BIPIPE CLI:
     - Home: bipipe-CLI/index.md
-    - bwa_dedup: bipipe-CLI/bwa_dedup.md
-    - gatk_gcnv: bipipe-CLI/gatk_gcnv.md
-    - cnv_pon: bipipe-CLI/cnv_pon.md
-    - snv_indel: bipipe-CLI/snv_indel.md
-    - cnv: bipipe-CLI/cnv.md
-
+    - Pipelines:
+      
+      - bwa_dedup: bipipe-CLI/bwa_dedup.md
+      - cnv: bipipe-CLI/cnv.md
+      - cnv_pon: bipipe-CLI/cnv_pon.md
+      - gatk_gcnv: bipipe-CLI/gatk_gcnv.md
+      - snv_indel: bipipe-CLI/snv_indel.md
+    - Utility:
+      - get-config: bipipe-CLI/get-config.md
+    
     

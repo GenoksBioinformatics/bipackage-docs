@@ -1,13 +1,8 @@
 ## USAGE
 
 ```bash
-Usage: bipipe bwa_dedup [-h] [--config CONFIG] [--ref_fasta REF_FASTA]
-                        [--bed_file BED_FILE] [--at AT] [--out_path OUT_PATH]
-                        [--r1 R1] [--r2 R2] [--sample_name SAMPLE_NAME]
-                        [--threads THREADS] [--remove_dups]
-                        [--remove_seq_dups] [--use_md]
+bipipe bwa_dedup [--config CONFIG] **params
 ```
-
 
 ## Example Config
 

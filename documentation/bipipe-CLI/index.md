@@ -3,7 +3,7 @@
 __Usage__
 
 ```bash
-bipipe [-h] [--version] {bwa_dedup,gatk_gcnv,cnv_pon,snv_indel,cnv,get-config} ...
+bipipe [command] **params ...
 ```
 
 __Positional Arguments__

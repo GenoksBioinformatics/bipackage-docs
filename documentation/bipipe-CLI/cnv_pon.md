@@ -1,22 +1,7 @@
 ## USAGE
 
 ```bash
-Usage: bipipe cnv_pon [-h] [--config CONFIG] [--output_folder OUTPUT_FOLDER]
-                      [--ref_fasta REF_FASTA] [--ref_dict REF_DICT]
-                      [--interval_list INTERVAL_LIST] [--pon_id PON_ID]
-                      [--normal_bams NORMAL_BAMS [NORMAL_BAMS ...]]
-                      [--gc_correction] [--bin_length BIN_LENGTH]
-                      [--blacklist_intervals BLACKLIST_INTERVALS]
-                      [--padding PADDING] [--do_impute_zeros]
-                      [--number_of_eigensamples NUMBER_OF_EIGENSAMPLES]
-                      [--feature_query_lookahead FEATURE_QUERY_LOOKAHEAD]
-                      [--minimum_interval_median_percentile MINIMUM_INTERVAL_MEDIAN_PERCENTILE]
-                      [--maximum_zeros_in_sample_percentage MAXIMUM_ZEROS_IN_SAMPLE_PERCENTAGE]
-                      [--maximum_zeros_in_interval_percentage MAXIMUM_ZEROS_IN_INTERVAL_PERCENTAGE]
-                      [--extreme_sample_median_percentile EXTREME_SAMPLE_MEDIAN_PERCENTILE]
-                      [--extreme_outlier_truncation_percentile EXTREME_OUTLIER_TRUNCATION_PERCENTILE]
-                      [--maximum_chunk_size MAXIMUM_CHUNK_SIZE]
-```
+bipipe cnv_pon [--config CONFIG] **params
 
 
 ## Example Config
@@ -51,7 +36,17 @@ Usage: bipipe cnv_pon [-h] [--config CONFIG] [--output_folder OUTPUT_FOLDER]
 ```
 
 
+This `cnv_pon.json`  can be copied into the current working via
+
+```shell
+bipipe get-config cnv_pon
+```
+
+
+
 ## CLI
+
+Parameters from the configuration file can be overwritten by the command line with the following parameters.
 
 | Option                                           | Required | Description                                      |
 |--------------------------------------------------|----------|--------------------------------------------------|

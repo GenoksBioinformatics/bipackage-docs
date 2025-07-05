@@ -1,16 +1,7 @@
 ## USAGE
 
 ```bash
-Usage: bipipe gatk_gcnv [-h] [--config CONFIG] [--input_json INPUT_JSON]
-                        [--output_dir OUTPUT_DIR] [--exome_loc EXOME_LOC]
-                        [--genome_fasta GENOME_FASTA] [--ref_dict REF_DICT]
-                        [--contig_pp CONTIG_PP]
-                        [--class_coherence_length CLASS_COHERENCE_LENGTH]
-                        [--cnv_coherence_length CNV_COHERENCE_LENGTH]
-                        [--min_contig_length MIN_CONTIG_LENGTH]
-                        [--p_active P_ACTIVE] [--p_alt P_ALT]
-                        [--interval_psi_scale INTERVAL_PSI_SCALE]
-                        [--sample_psi_scale SAMPLE_PSI_SCALE]
+bipipe gatk_gcnv [--config CONFIG] **params
 
 ```
 
@@ -32,9 +23,16 @@ Usage: bipipe gatk_gcnv [-h] [--config CONFIG] [--input_json INPUT_JSON]
   "interval_psi_scale": "0.001"
 }
 ```
+This `cnv_pon.json`  can be copied into the current working via
+
+```shell
+bipipe get-config gatk_gcnv
+```
 
 
 ## CLI
+
+Parameters from the configuration file can be overwritten by the command line with the following parameters.
 
 | Option                                    | Required | Description                                                           |
 |-------------------------------------------|----------|-----------------------------------------------------------------------|

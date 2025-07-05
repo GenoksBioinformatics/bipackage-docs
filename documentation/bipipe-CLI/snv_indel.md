@@ -1,27 +1,7 @@
 ## USAGE
 
 ```bash
-Usage: bipipe snv_indel [-h] [--config CONFIG] [--algotype ALGOTYPE]
-                        [--index_fasta] [--aligner_threads ALIGNER_THREADS]
-                        [--remove_all_duplicates]
-                        [--remove_sequencing_duplicates]
-                        [--use_gatk_mark_duplicates] [--use_dragen]
-                        [--output_folder OUTPUT_FOLDER] [--run_name RUN_NAME]
-                        [--ref_fasta REF_FASTA] [--ref_dict REF_DICT]
-                        [--interval_list INTERVAL_LIST]
-                        [--scatter_count SCATTER_COUNT]
-                        [--germline_resource GERMLINE_RESOURCE]
-                        [--index_image INDEX_IMAGE]
-                        [--downsampling_stride DOWNSAMPLING_STRIDE]
-                        [--panel_of_normals PANEL_OF_NORMALS]
-                        [--variants_for_contamination VARIANTS_FOR_CONTAMINATION]
-                        [--max_reads_per_alignment_start MAX_READS_PER_ALIGNMENT_START]
-                        [--max_suspicious_reads_per_alignment_start MAX_SUSPICIOUS_READS_PER_ALIGNMENT_START]
-                        [--max_population_af MAX_POPULATION_AF] [--lrom]
-                        [--interval_padding INTERVAL_PADDING]
-                        [--tumor_samples TUMOR_SAMPLES]
-                        [--normal_samples NORMAL_SAMPLES]
-
+bipipe snv_indel [--config CONFIG] **params
 ```
 
 ## Example Config
@@ -87,9 +67,16 @@ Usage: bipipe snv_indel [-h] [--config CONFIG] [--algotype ALGOTYPE]
   ]
 }
 ```
+This `cnv_pon.json`  can be copied into the current working via
+
+```shell
+bipipe get-config snv_indel
+```
 
 
 ## CLI
+
+Parameters from the configuration file can be overwritten by the command line with the following parameters.
 
 | Option                                           | Required | Description                                      |
 |--------------------------------------------------|----------|--------------------------------------------------|

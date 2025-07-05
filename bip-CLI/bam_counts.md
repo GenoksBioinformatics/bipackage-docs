@@ -11,4 +11,4 @@ __Options__
 | `-h, --help`                |       | No       | Show this help message and exit |
 | `--dir DIR`                 | `-d`  | Yes      | Input directory.                 |
 | `--exome-bait EXOME_BAIT`   | `-e`  | Yes      | Exome bait.                      |
-| `--num-threads NUM_THREADS` | `-n`  | No       | Number of threads to
+| `--num-threads NUM_THREADS` | `-n`  | No       | Number of threads to use.        |

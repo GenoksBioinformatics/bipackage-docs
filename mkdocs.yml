@@ -1,4 +1,6 @@
 site_name: BIPACKAGE
+docs_dir: documentation
+site_dir: docs 
 theme:
   name: material
   font:

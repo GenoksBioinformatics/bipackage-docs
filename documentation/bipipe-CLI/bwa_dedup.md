@@ -4,11 +4,9 @@
 bipipe bwa_dedup [--config CONFIG] **params
 ```
 
-## Example Config
+## Example Config File
 
-
-
-```json
+```json title="bwa_dedup.json"
 {
   "ref_fasta": "/PATH/TO/REFERENCE/genome.fa",
   "bed_file": "/PATH/TO/TARGETS.bed",
@@ -48,4 +46,4 @@ Parameters from the configuration file can be overwritten by the command line wi
 | `--threads THREADS`   | No       | Number of threads to use for processing.                      |
 | `--remove_dups`       | No       | Whether to remove all duplicates (default is False).          |
 | `--remove_seq_dups`   | No       | Whether to remove sequencing duplicates (default is False).   |
-| `--use_md`            | No       | Whether to use MarkDuplicatesSpark (default is False).
+| `--use_md`            | No       | Whether to use MarkDuplicatesSpark (default is False).        |

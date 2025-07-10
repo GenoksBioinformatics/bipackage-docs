@@ -1935,9 +1935,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-config" class="md-nav__link">
+  <a href="#example-config-file" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Config
+      Example Config File
     </span>
   </a>
   
@@ -2160,9 +2160,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-config" class="md-nav__link">
+  <a href="#example-config-file" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Config
+      Example Config File
     </span>
   </a>
   
@@ -2198,8 +2198,8 @@
 <h2 id="usage">USAGE<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>bipipe<span class="w"> </span>cnv<span class="w"> </span><span class="o">[</span>--config<span class="w"> </span>CONFIG<span class="o">]</span><span class="w"> </span>**params
 </code></pre></div>
-<h2 id="example-config">Example Config<a class="headerlink" href="#example-config" title="Permanent link">&para;</a></h2>
-<p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<h2 id="example-config-file">Example Config File<a class="headerlink" href="#example-config-file" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><span class="filename">cnv.json</span><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;algotype&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bwtsw&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;index_fasta&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;aligner_threads&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span>
@@ -2468,7 +2468,57 @@ This <code>cnv.json</code>  can be copied into the current working via</p>
 <tr>
 <td><code>--number_of_smoothing_iterations_per_fit NUMBER_OF_SMOOTHING_ITERATIONS_PER_FIT</code></td>
 <td>No</td>
-<td>Smoothing iterations</td>
+<td>Smoothing iterations per fit.</td>
+</tr>
+<tr>
+<td><code>--neutral_segment_copy_ratio_lower_bound NEUTRAL_SEGMENT_COPY_RATIO_LOWER_BOUND</code></td>
+<td>No</td>
+<td>Neutral segment copy ratio lower bound.</td>
+</tr>
+<tr>
+<td><code>--neutral_segment_copy_ratio_upper_bound NEUTRAL_SEGMENT_COPY_RATIO_UPPER_BOUND</code></td>
+<td>No</td>
+<td>Neutral segment copy ratio upper bound.</td>
+</tr>
+<tr>
+<td><code>--outlier_neutral_segment_copy_ratio_z_score_threshold OUTLIER_NEUTRAL_SEGMENT_COPY_RATIO_Z_SCORE_THRESHOLD</code></td>
+<td>No</td>
+<td>Outlier neutral segment copy ratio z-score threshold.</td>
+</tr>
+<tr>
+<td><code>--calling_copy_ratio_z_score_threshold CALLING_COPY_RATIO_Z_SCORE_THRESHOLD</code></td>
+<td>No</td>
+<td>Calling copy ratio z-score threshold.</td>
+</tr>
+<tr>
+<td><code>--minimum_contig_length MINIMUM_CONTIG_LENGTH</code></td>
+<td>No</td>
+<td>Minimum contig length.</td>
+</tr>
+<tr>
+<td><code>--maximum_copy_ratio MAXIMUM_COPY_RATIO</code></td>
+<td>No</td>
+<td>Maximum copy ratio.</td>
+</tr>
+<tr>
+<td><code>--point_size_copy_ratio POINT_SIZE_COPY_RATIO</code></td>
+<td>No</td>
+<td>Point size (copy ratio).</td>
+</tr>
+<tr>
+<td><code>--point_size_allele_fraction POINT_SIZE_ALLELE_FRACTION</code></td>
+<td>No</td>
+<td>Point size (allele fraction).</td>
+</tr>
+<tr>
+<td><code>--tumor_samples TUMOR_SAMPLES</code></td>
+<td>No</td>
+<td>JSON string or path to tumor samples list.</td>
+</tr>
+<tr>
+<td><code>--normal_samples NORMAL_SAMPLES</code></td>
+<td>No</td>
+<td>JSON string or path to normal samples list.</td>
 </tr>
 </tbody>
 </table>

@@ -5,9 +5,9 @@ bipipe gatk_gcnv [--config CONFIG] **params
 
 ```
 
-## Example Config
+## Example Config File
 
-```json
+```json title="gatk_gcnv.json"
 {
   "input_json": "/PATH/TO/INPUT.json",
   "output_dir": "/PATH/TO/OUTPUT_DIR",
@@ -23,7 +23,7 @@ bipipe gatk_gcnv [--config CONFIG] **params
   "interval_psi_scale": "0.001"
 }
 ```
-This `cnv_pon.json`  can be copied into the current working via
+This `gatk_gcnv.json`  can be copied into the current working via
 
 ```shell
 bipipe get-config gatk_gcnv
@@ -50,4 +50,4 @@ Parameters from the configuration file can be overwritten by the command line wi
 | `--p_active P_ACTIVE`                     | No       | Prior probability of treating an interval as CNV-active              |
 | `--p_alt P_ALT`                           | No       | Total prior probability of alternative copy-number states            |
 | `--interval_psi_scale INTERVAL_PSI_SCALE` | No       | Typical scale of interval-specific unexplained variance              |
-| `--sample_psi_scale SAMPLE_PSI_SCALE`     | No       | Typical scale of sample-specific correction to the unexplained variance
+| `--sample_psi_scale SAMPLE_PSI_SCALE`     | No       | Typical scale of sample-specific correction to the unexplained variance |

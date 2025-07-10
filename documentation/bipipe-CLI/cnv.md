@@ -4,9 +4,9 @@
 bipipe cnv [--config CONFIG] **params
 ```
 
-## Example Config
+## Example Config File
 
-```json
+```json title="cnv.json"
 {
   "algotype": "bwtsw",
   "index_fasta": false,
@@ -121,4 +121,14 @@ Parameters from the configuration file can be overwritten by the command line wi
 | `--smoothing_credible_interval_threshold_copy_ratio SMOOTHING_CREDIBLE_INTERVAL_THRESHOLD_COPY_RATIO` | No | Smoothing credible interval threshold (copy ratio). |
 | `--smoothing_credible_interval_threshold_allele_fraction SMOOTHING_CREDIBLE_INTERVAL_THRESHOLD_ALLELE_FRACTION` | No | Smoothing credible interval threshold (allele fraction). |
 | `--maximum_number_of_smoothing_iterations MAXIMUM_NUMBER_OF_SMOOTHING_ITERATIONS` | No | Max smoothing iterations. |
-| `--number_of_smoothing_iterations_per_fit NUMBER_OF_SMOOTHING_ITERATIONS_PER_FIT` | No | Smoothing iterations
+| `--number_of_smoothing_iterations_per_fit NUMBER_OF_SMOOTHING_ITERATIONS_PER_FIT` | No | Smoothing iterations per fit. |
+| `--neutral_segment_copy_ratio_lower_bound NEUTRAL_SEGMENT_COPY_RATIO_LOWER_BOUND` | No | Neutral segment copy ratio lower bound. |
+| `--neutral_segment_copy_ratio_upper_bound NEUTRAL_SEGMENT_COPY_RATIO_UPPER_BOUND` | No | Neutral segment copy ratio upper bound. |
+| `--outlier_neutral_segment_copy_ratio_z_score_threshold OUTLIER_NEUTRAL_SEGMENT_COPY_RATIO_Z_SCORE_THRESHOLD` | No | Outlier neutral segment copy ratio z-score threshold. |
+| `--calling_copy_ratio_z_score_threshold CALLING_COPY_RATIO_Z_SCORE_THRESHOLD` | No | Calling copy ratio z-score threshold. |
+| `--minimum_contig_length MINIMUM_CONTIG_LENGTH`  | No       | Minimum contig length.                           |
+| `--maximum_copy_ratio MAXIMUM_COPY_RATIO`        | No       | Maximum copy ratio.                              |
+| `--point_size_copy_ratio POINT_SIZE_COPY_RATIO`  | No       | Point size (copy ratio).                         |
+| `--point_size_allele_fraction POINT_SIZE_ALLELE_FRACTION` | No | Point size (allele fraction). |
+| `--tumor_samples TUMOR_SAMPLES`                  | No       | JSON string or path to tumor samples list.      |
+| `--normal_samples NORMAL_SAMPLES`                | No       | JSON string or path to normal samples list.     |

@@ -5,9 +5,9 @@ bipipe cnv_pon [--config CONFIG] **params
 ```
 
 
-## Example Config
+## Example Config File
 
-```json
+```json title="cnv_pon.json"
 {
   "output_folder": "/PATH/TO/OUTPUT/FOLDER",
   "ref_fasta": "/PATH/TO/REFERENCE/genome.fa",
@@ -71,4 +71,4 @@ Parameters from the configuration file can be overwritten by the command line wi
 | `--maximum_zeros_in_interval_percentage MAXIMUM_ZEROS_IN_INTERVAL_PERCENTAGE` | No | Maximum zeros in interval percentage. |
 | `--extreme_sample_median_percentile EXTREME_SAMPLE_MEDIAN_PERCENTILE` | No | Extreme sample median percentile. |
 | `--extreme_outlier_truncation_percentile EXTREME_OUTLIER_TRUNCATION_PERCENTILE` | No | Extreme outlier truncation percentile. |
-| `--maximum_chunk_size MAXIMUM_CHUNK_SIZE`        | No       | Maximum chunk
+| `--maximum_chunk_size MAXIMUM_CHUNK_SIZE`        | No       | Maximum chunk size. |

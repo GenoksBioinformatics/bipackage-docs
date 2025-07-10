@@ -4,9 +4,9 @@
 bipipe snv_indel [--config CONFIG] **params
 ```
 
-## Example Config
+## Example Config File
 
-```json
+```json title="snv_indel.json"
 {
   "algotype": "bwtsw",
   "index_fasta": false,
@@ -67,7 +67,7 @@ bipipe snv_indel [--config CONFIG] **params
   ]
 }
 ```
-This `cnv_pon.json`  can be copied into the current working via
+This `snv_indel.json`  can be copied into the current working via
 
 ```shell
 bipipe get-config snv_indel

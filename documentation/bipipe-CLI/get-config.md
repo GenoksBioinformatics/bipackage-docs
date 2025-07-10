@@ -15,4 +15,4 @@ __Options__
 
 | Option      | Required | Description                      |
 |-------------|----------|----------------------------------|
-| `-h, --help`| No       | Show this help message and exit
+| `-h, --help`| No       | Show this help message and exit |
